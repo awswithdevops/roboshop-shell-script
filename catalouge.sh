@@ -44,7 +44,7 @@ dnf install nodejs -y &>> $LOGFILE
 VALIDATE $? "einstalling nodejs:18"
 
 id roboshop
-if [ $f -ne 0 ]
+if [ $? -ne 0 ]
 then
     useradd roboshop &>> $LOGFILE
     VALIDATE $? "useradd roboshop"
