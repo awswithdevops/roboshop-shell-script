@@ -28,6 +28,6 @@ else
     echo -e "$G Root user $N"
 fi
 
-copy mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
+cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
 
-VALIDATE $? "copied mongo repo"
+VALIDATE $? "copied mongodb repo"
